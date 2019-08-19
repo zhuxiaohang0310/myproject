@@ -3,15 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Life from './pages/demo/Life'
-import Child from './pages/demo/Child'
+
+import Admin from './admin'
+
+import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
-        <Life>
-            
-        </Life>
-
-
+        
+        <Router>
+                <Admin></Admin>
+        </Router>
+        
         
         , document.getElementById('root'));
 
